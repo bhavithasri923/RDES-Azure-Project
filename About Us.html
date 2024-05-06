@@ -5,7 +5,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>RDES</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./aboutus_slider.css">
 <style>
 
 .d-block{
@@ -69,9 +72,104 @@ body {
         </nav></b></center> <hr>
 
 <!-- Content Zone start-->        
+<div>
+  <div style="border:3px solid black;border-radius:25px ; background-color: antiquewhite;height:fit-content; padding:7px;text-indent:0.9cm;font-size:20px;font-family: cursive; ">
+    <p>Rural Development Educational Soceity was Established in the year 2023 with a tag line of FREE (Foundatio for Rural Education and Empowerment),      As we move towards becoming a developed nation, the role of youth of the country, becomes increasingly important.</p>
+     <p>
+     We strongly belive that education is the only wepon to change the world, so we server our best to the Students to reach their dreams. Here we bulid their starting future as strong as their servive in their lifes to achive success.
+ </p>
+ <p>
+  As an educational organizaion, RDES encourages students to think beyond textbooks. Teachers promte social awaarenesss by providing a forum for open discussion and debate on current issues like dowry, pollution, gender discrimination and other social issues. Additionally, teachers emphasize the importance of preserving and respecting one's roots and environment through activities like traditional dance folklore, handicrafts, organic gardening and cleaning. This has encouraged students to be proud of who they are. They believe in the dignity of labour and are happy with their identity.
+</p>
+<p>
+  As part of our large vsion to exten education to a larger community, we have tied up with many Tech Companys Organizations and adpoted 25 governments schools across the Telangana state, among the 25 schools 18 schools have been awarded as the best schools in the district for the academic year 2023-24.
+</p>
+ </div>
+ <br>
+ <div>
+     <p style="border: 3px solid black;border-radius: 20px;padding:5px ; text-align:center; font-size:30px;font-family: cursive;color: white;background-color: black;width:50%;margin-left:auto;margin-right: auto;text-decoration: underline;">Our Mission and Vission</p>
+ </div>
+ <div>
+     <ul>
+         <style>
+             li{
+                 font-size:25px;
+                 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                 font-style: italic;
+             }
+         </style>
+         <label><span style="color:black;font-size: xx-large ;font-family: serif;font-weight: bold;border-bottom: 2px solid black; ">Vission</span></label>
+         <li>To promote educationas as a vehicle for rural development</li>
+         <li>To provide quality education.</li>
+         <li>To Achieve Academic Excellence.</li>
+         <li>To Prepare the Students and staff to meet the Global needs of Industry and Society.</li>
 
-<h1> Work Under Progress</h1>
+         <label><span style="color:black;font-size: xx-large ;font-family: serif;font-weight: bold;border-bottom: 2px solid black;">Mission</span></label>
 
+         <li>To Mould the Students to achieve 100% Employability in future.</li>
+         <li>to Educate, Engage and Empower rural girls and boys</li>
+         <li>To Achieve Deemed University Status & Self Sufficiency</li>
+         <li>To Include Ethical & Moral values - based Educational System in the institution.</li>
+     </ul>
+ </div>
+
+<!---------------------------------------------------Slider start------------------------------------------>
+ <div>
+  <hr><br>
+ <center><span style="font-size:40px;font-weight: bold; font-family:Georgia, serif; margin-top: 1px;margin-bottom: 1px;padding-left:5rem;padding: 25px; background-color: #1faccf;border-radius: 50%;"> Our Supporters and Sponsers </span></center>
+<br>
+
+<div style="margin-top:50px; margin-bottom: 200px;" class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./1.png" alt="CYRAD Company" />
+      <div>
+        <h2>CYRAD Company</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./2.png" alt="High Tech Company" />
+      <div>
+        <h2>High Tech Company</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./3.png" alt="BE Tech Association" />
+      <div>
+        <h2>BE Tech Association</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./4.png" alt="ALPHA TECH" />
+      <div>
+        <h2>ALPHA TECH</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./5.png" alt="DIGI TECH" />
+      <div>
+        <h2>DIGI TECH</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./6.png" alt="Tech Logo" />
+      <div>
+        <h2>Tech Logo</h2>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./7.png" alt="Tech Company" />
+      <div>
+        <h2>Tech Company</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+ </div>
+<!---------------------------------------------------Slider end------------------------------------------>
+</div>
+<hr>
 <!-- Content Zone end-->
 <br>
 <div style="background-color:rgb(68, 68, 68);border-top: 1px solid black;padding-left:1.5rem;padding-right: 1.5rem;">
@@ -105,20 +203,43 @@ body {
 
 </div>
 
+<!---------------------------------------------------Slider JS Start------------------------------------------>
+
 <script>
-window.onscroll = function() {myFunction()};
+  var swiper = new Swiper(".mySwiper", {
+ effect: "coverflow",
+ grabCursor: true,
+ centeredSlides: true,
+ loop: true,
+ slidesPerView: "1",
+ coverflowEffect: {
+   rotate: 0,
+   stretch: 0,
+   depth: 100,
+   modifier: 4,
+   slideShadows: false
+ },
+ keyboard: {
+   enabled: true
+ },
+ mousewheel: {
+   thresholdDelta: 70
+ },
+ initialSlide: 0,
+ on: {
+   click(event) {
+     swiper.slideTo(this.clickedIndex);
+   }
+ },
+ breakpoints: {
+   640: {
+     slidesPerView: 2
+   }
+ }
+});
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+ </script>
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-
+<!---------------------------------------------------Slider JS End-------------------------------------------->
 </body>
 </html>
